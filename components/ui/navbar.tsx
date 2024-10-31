@@ -30,7 +30,7 @@ export const Navbar = () => {
           </a>
         </div>
 
-        <ul className="hidden md:flex gap-x-6">
+        <ul className="hidden lg:flex gap-x-6">
           {links.map(({ target, label }, i) => {
             return (
               <li key={i} className="">
@@ -47,20 +47,20 @@ export const Navbar = () => {
           })}
         </ul>
 
-        <div className="flex items-center gap-x-4">
+        <div className="flex items-center gap-x-2">
           <ModeToggle />
-          <Button className="hidden md:flex" asChild>
+          <Button className="hidden lg:flex" asChild>
             <a href="#contact">Contact</a>
           </Button>
 
-          <div className="relative flex md:hidden">
+          <div className="relative flex lg:hidden">
             <Button onClick={toggle} variant={"outline"} size={"icon"}>
               {!isOpen ? <Menu /> : <X />}
             </Button>
 
             <ul
               className={cn(
-                `absolute right-1/2 flex flex-col items-center p-12 z-50 bg-card md:hidden gap-x-6 border duration-300 shadow rounded-full rounded-tr-none top-10 origin-top-right space-y-2 w-max`,
+                `absolute right-1/2 flex flex-col items-center p-12 z-50 bg-card lg:hidden gap-x-6 border duration-300 shadow rounded-full rounded-tr-none top-10 origin-top-right space-y-2 w-max`,
                 isOpen
                   ? `visible scale-100 opacity-100`
                   : `invisible scale-0 opacity-0`

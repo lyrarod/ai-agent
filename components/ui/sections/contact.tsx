@@ -9,11 +9,8 @@ export const Contact = () => {
           Contact Us
         </h1>
         <div className="flex flex-col w-full mt-10 lg:flex-row lg:items-center">
-          <div className="flex flex-col space-y-4 xl:space-y-6 basis-1/2 lg:pr-4">
+          <div className="flex flex-col space-y-6 basis-1/2 lg:pr-4">
             <strong className="text-primary lg:text-lg">Get in Touch</strong>
-            <p className="text-sm lg:text-base">
-              ✨ Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            </p>
 
             <div className="flex items-center gap-x-3">
               <i className="fa-solid fa-location-dot text-primary"></i>{" "}
@@ -62,7 +59,7 @@ export const Contact = () => {
               })}
             </div>
           </div>
-          <div className="flex justify-end mt-10 basis-1/2 lg:mt-0">
+          <div className="flex justify-end mt-12 basis-1/2 lg:mt-0">
             <div className="relative z-0 w-full lg:max-w-lg">
               <img
                 className="shadow rounded-tr-[8vw]"

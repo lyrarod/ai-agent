@@ -3,6 +3,7 @@ import React from "react";
 
 import { Loader } from "lucide-react";
 import { MoonIcon, SunIcon } from "@radix-ui/react-icons";
+import { Button } from "./button";
 
 export const ModeToggle = () => {
   const [mounted, setIsMounted] = React.useState(false);
@@ -21,18 +22,12 @@ export const ModeToggle = () => {
   };
 
   return (
-    <>
+    <Button onClick={toggle} variant={"ghost"} size={"icon"}>
       {mounted ? (
-        <div className="flex">
-          {darkMode ? (
-            <SunIcon onClick={toggle} className="cursor-pointer size-5" />
-          ) : (
-            <MoonIcon onClick={toggle} className="cursor-pointer size-5" />
-          )}
-        </div>
+        <>{darkMode ? <SunIcon /> : <MoonIcon />}</>
       ) : (
-        <Loader className="animate-spin size-5" />
+        <Loader className="animate-spin " />
       )}
-    </>
+    </Button>
   );
 };

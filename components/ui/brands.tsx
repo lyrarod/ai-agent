@@ -55,12 +55,12 @@ export const Brands = () => {
           {images.map((slideContent, index) => (
             <SwiperSlide
               key={index}
-              className="flex items-center justify-center py-10 md:py-14"
+              className="flex items-center justify-center py-8 lg:py-10"
             >
               <img
                 src={slideContent}
                 alt="brands"
-                className="w-full h-6 select-none md:h-12"
+                className="w-full h-8 select-none lg:h-10"
               />
             </SwiperSlide>
           ))}
