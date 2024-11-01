@@ -8,17 +8,15 @@ import "swiper/css";
 
 const images = [
   "nextjs.svg",
-  "github.svg",
+  "tailwindcss.svg",
+  "typescript.svg",
   "vercel.svg",
-  "netlify.svg",
-  "react-query.svg",
+  "github.svg",
+  "openai.svg",
   "claude.svg",
   "perplexity.svg",
-  "daisyUI.svg",
-  "htmx.svg",
   "anthropic.svg",
-  "google-gemini.svg",
-  "hugging-face.svg",
+  "htmx.svg",
 ];
 
 export const Brands = () => {
