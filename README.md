@@ -2,4 +2,6 @@
 
 ## Vercel Online: https://ai-agent-chi.vercel.app
 
-![Design sem nome](https://github.com/user-attachments/assets/24b6f069-fc34-4a6d-a012-44d928225834)
+<br>
+
+![Design sem nome](https://github.com/user-attachments/assets/e3c42c12-2644-402d-ae60-3f09277ed382)
