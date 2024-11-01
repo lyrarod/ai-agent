@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 
 import { Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -46,7 +47,7 @@ export const Brands = () => {
             // when window width is >= 640px
             640: {
               slidesPerView: 4,
-              spaceBetween: 50,
+              spaceBetween: 40,
             },
           }}
         >
@@ -55,10 +56,12 @@ export const Brands = () => {
               key={index}
               className="flex items-center justify-center py-8 lg:py-10"
             >
-              <img
+              <Image
                 src={slideContent}
                 alt="brands"
-                className="w-full h-8 select-none lg:h-10"
+                className="w-full h-8 select-none"
+                width={1000}
+                height={1000}
               />
             </SwiperSlide>
           ))}
