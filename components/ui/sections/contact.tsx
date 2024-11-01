@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export const Contact = () => {
   return (
     <section
@@ -61,12 +63,14 @@ export const Contact = () => {
           </div>
           <div className="flex justify-end mt-12 basis-1/2 lg:mt-0">
             <div className="relative z-0 w-full lg:max-w-lg">
-              <img
-                className="shadow rounded-tr-[8vw]"
-                src="contact.jpeg"
+              <Image
+                src="/contact.jpeg"
                 alt="Beautiful image"
+                width={1000}
+                height={1000}
+                className="shadow-2xl rounded-tr-[12vw]"
               />
-              <div className="absolute w-full h-full shadow rounded-tr-[8vw] -right-4 -top-4 -z-10 bg-gradient-to-b from-primary to-emerald-500 lg:-right-6 lg:-top-6"></div>
+              <div className="absolute w-full h-full shadow-2xl rounded-tr-[12vw] -right-4 -top-4 -z-10 bg-gradient-to-b from-primary to-emerald-500 lg:-right-6 lg:-top-6"></div>
             </div>
           </div>
         </div>
