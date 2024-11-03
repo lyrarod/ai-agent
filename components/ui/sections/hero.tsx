@@ -6,11 +6,11 @@ export const Hero = () => {
     <section id="hero" className="flex flex-col py-20">
       <div className="container">
         <div className="relative flex flex-col items-center py-10 space-y-8 md:py-20">
-          <Activity className="absolute top-0 md:size-full size-80 -z-10 dark:text-muted/50 text-muted/80" />
+          <Activity className="absolute top-0 text-gray-200 dark:text-gray-900/60 md:size-full size-80 -z-10" />
           <h1 className="text-6xl font-bold text-center md:text-8xl text-primary drop-shadow-md">
             AI Agent
           </h1>
-          <h2 className="px-4 text-3xl font-semibold text-center md:text-5xl drop-shadow-md">
+          <h2 className="px-4 text-3xl font-semibold text-center md:text-5xl drop-shadow-md text-wrap">
             Lorem ipsum dolor sit amet consectetur.
           </h2>
 

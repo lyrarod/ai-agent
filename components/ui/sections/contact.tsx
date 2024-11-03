@@ -50,7 +50,7 @@ export const Contact = () => {
                 return (
                   <div
                     key={i}
-                    className="flex flex-col items-center justify-center p-6 space-y-2 transition border rounded-md shadow hover:shadow-md border-primary bg-card hover:scale-105"
+                    className="flex flex-col items-center justify-center p-6 space-y-2 border rounded-md shadow hover:shadow-md border-primary bg-card"
                   >
                     <span className="text-primary">
                       <i className={icon}></i>

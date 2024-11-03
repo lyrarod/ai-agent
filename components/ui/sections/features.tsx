@@ -3,10 +3,7 @@ import { Check } from "lucide-react";
 
 export const Features = () => {
   return (
-    <section
-      id="features"
-      className="flex flex-col min-h-screen py-20 bg-background"
-    >
+    <section id="features" className="flex flex-col min-h-screen py-20">
       <div className="container text-wrap">
         <h1 className="pb-1 pl-1 text-3xl font-bold border-b-2 w-max rounded-bl-xl border-border text-primary md:text-4xl lg:text-5xl">
           Features
