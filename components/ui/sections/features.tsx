@@ -1,6 +1,5 @@
 import { cn } from "@/lib/utils";
 import { Check } from "lucide-react";
-import Image from "next/image";
 
 export const Features = () => {
   return (

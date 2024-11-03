@@ -1,6 +1,5 @@
 import {
   Activity,
-  Aperture,
   ArrowRightCircle,
   Atom,
   Bot,
