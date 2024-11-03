@@ -3,7 +3,7 @@ import { Button } from "../button";
 
 export const Hero = () => {
   return (
-    <section id="hero" className="flex flex-col pt-24 pb-20 lg:pt-32">
+    <section id="hero" className="flex flex-col py-20">
       <div className="container">
         <div className="relative flex flex-col items-center py-10 space-y-8 md:py-20">
           <Activity className="absolute top-0 md:size-full size-80 -z-10 dark:text-muted/50 text-muted/80" />

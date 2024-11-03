@@ -7,10 +7,9 @@ import { Button } from "./button";
 import { cn } from "@/lib/utils";
 
 const links = [
-  { target: "#", label: "home" },
-  { target: "#about", label: "about us" },
-  { target: "#services", label: "services" },
-  { target: "#pricing", label: "pricing" },
+  { target: "#features", label: "features" },
+  { target: "#product", label: "product" },
+  { target: "#plans", label: "plans" },
   { target: "#contact", label: "contact" },
 ];
 
@@ -34,14 +33,14 @@ export const Navbar = () => {
           {links.map(({ target, label }, i) => {
             return (
               <li key={i} className="">
-                {label !== "contact" && label !== "home" ? (
+                {label !== "contact" && (
                   <a
                     href={target}
                     className="flex text-sm font-medium tracking-widest capitalize hover:text-primary"
                   >
                     {label}
                   </a>
-                ) : null}
+                )}
               </li>
             );
           })}

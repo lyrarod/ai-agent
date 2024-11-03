@@ -7,7 +7,7 @@ export const Contact = () => {
       className="flex flex-col items-center justify-center w-full py-20 overflow-hidden"
     >
       <div className="container">
-        <h1 className="pb-1 pl-1 text-3xl font-bold border-b-2 w-max rounded-bl-xl border-border text-primary lg:text-5xl">
+        <h1 className="pb-1 pl-1 text-3xl font-bold border-b-2 w-max rounded-bl-xl border-border text-primary lg:text-5xl md:text-4xl">
           Contact Us
         </h1>
         <div className="flex flex-col w-full mt-10 lg:flex-row lg:items-center">
@@ -62,15 +62,15 @@ export const Contact = () => {
             </div>
           </div>
           <div className="flex justify-end mt-12 basis-1/2 lg:mt-0">
-            <div className="relative z-0 w-full lg:max-w-lg">
+            <div className="relative z-0 w-full h-full lg:max-w-lg">
               <Image
                 src="/contact.jpeg"
                 alt="Beautiful image"
                 width={1000}
                 height={1000}
-                className="shadow-2xl rounded-tr-[12vw]"
+                className="shadow-2xl"
               />
-              <div className="absolute w-full h-full shadow-2xl rounded-tr-[12vw] -right-4 -top-4 -z-10 bg-gradient-to-b from-primary to-emerald-500 lg:-right-6 lg:-top-6"></div>
+              <div className="absolute w-full h-full -right-4 -top-4 -z-10 bg-gradient-to-b from-primary to-emerald-500 lg:-right-6 lg:-top-6"></div>
             </div>
           </div>
         </div>
