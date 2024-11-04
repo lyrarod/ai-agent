@@ -1,11 +1,4 @@
-import {
-  Activity,
-  ArrowRightCircle,
-  Atom,
-  Bot,
-  Database,
-  HeartHandshake,
-} from "lucide-react";
+import { Activity, Atom, Bot, Database, HeartHandshake } from "lucide-react";
 
 export const FeaturesBanner = () => {
   return (
