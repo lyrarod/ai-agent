@@ -1,6 +1,6 @@
 import { Brands } from "@/components/brands";
 import { FeaturesBanner } from "@/components/feature-banner";
-import { Contact, Features, Hero } from "@/components/ui/sections";
+import { Contact, Features, Hero, Product } from "@/components/ui/sections";
 
 export default function Home() {
   return (
@@ -9,6 +9,7 @@ export default function Home() {
       <Brands />
       <Features />
       <FeaturesBanner />
+      <Product />
       <Contact />
     </main>
   );
