@@ -22,7 +22,7 @@ const images = [
 
 export const Brands = () => {
   return (
-    <section id="brands" className="bg-muted">
+    <section id="brands" className="flex items-center bg-muted h-28">
       <div className="container">
         <Swiper
           modules={[Autoplay]}

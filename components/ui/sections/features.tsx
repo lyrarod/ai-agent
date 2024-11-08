@@ -1,15 +1,18 @@
 import { cn } from "@/lib/utils";
-import { Check } from "lucide-react";
+import { Activity, Check } from "lucide-react";
 
 export const Features = () => {
   return (
     <section id="features" className="flex flex-col min-h-screen py-20">
       <div className="container text-wrap">
-        <h1 className="pb-1 pl-1 text-3xl font-bold border-b-2 w-max rounded-bl-xl border-border text-primary md:text-4xl lg:text-5xl">
-          Features
-        </h1>
+        <div className="flex text-center w-max gap-x-1">
+          <h1 className="pb-1 pl-1 text-3xl font-bold border-b-2 w-max rounded-bl-xl border-border text-primary lg:text-5xl md:text-4xl">
+            Key Features
+          </h1>
+          <Activity className="text-border" />
+        </div>
 
-        <div className="grid grid-cols-1 gap-8 mt-16 lg:grid-cols-3 md:grid-cols-2">
+        <div className="grid grid-cols-1 gap-12 mt-16 lg:grid-cols-3 md:grid-cols-2">
           {features.map((feature, i) => {
             return (
               <div
@@ -19,7 +22,7 @@ export const Features = () => {
                 <i
                   className={cn(
                     feature.icon,
-                    `text-2xl xl:text-3xl text-primary`
+                    `text-3xl xl:text-4xl text-primary`
                   )}
                 ></i>
                 <p className="text-muted-foreground">{feature.description}</p>

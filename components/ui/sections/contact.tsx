@@ -1,3 +1,4 @@
+import { Activity } from "lucide-react";
 import Image from "next/image";
 
 export const Contact = () => {
@@ -7,9 +8,13 @@ export const Contact = () => {
       className="flex flex-col items-center justify-center w-full py-20 overflow-hidden"
     >
       <div className="container">
-        <h1 className="pb-1 pl-1 text-3xl font-bold border-b-2 w-max rounded-bl-xl border-border text-primary lg:text-5xl md:text-4xl">
-          Contact Us
-        </h1>
+        <div className="flex text-center w-max gap-x-1">
+          <h1 className="pb-1 pl-1 text-3xl font-bold border-b-2 w-max rounded-bl-xl border-border text-primary lg:text-5xl md:text-4xl">
+            Contact Us
+          </h1>
+          <Activity className="text-border" />
+        </div>
+
         <div className="flex flex-col w-full mt-10 lg:flex-row lg:items-center">
           <div className="flex flex-col space-y-6 basis-1/2 lg:pr-4">
             <strong className="text-primary lg:text-lg">Get in Touch</strong>
