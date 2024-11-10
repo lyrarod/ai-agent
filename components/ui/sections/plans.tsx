@@ -17,14 +17,14 @@ export const Plans = () => {
             return (
               <div
                 key={i}
-                className="flex flex-col px-8 py-12 space-y-8 border rounded-md shadow-md"
+                className="flex flex-col px-8 py-12 space-y-4 transition border rounded-md shadow-md lg:space-y-8 hover:border-primary hover:scale-105"
               >
                 <p className="px-4 py-1 font-medium rounded-md shadow xl:text-xl bg-muted w-max">
                   {plan.title}
                 </p>
                 <strong className="text-4xl xl:text-5xl">{`$${plan.price}`}</strong>
 
-                <ul className="flex flex-col gap-y-2">
+                <ul className="flex flex-col lg:gap-y-2 gap-y-1">
                   {plan.features.map((feature, i) => (
                     <li key={i} className="flex gap-x-1">
                       <Check className="text-emerald-500" /> {feature}

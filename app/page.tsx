@@ -4,6 +4,7 @@ import {
   Features,
   FeaturesBanner,
   Hero,
+  Newsletter,
   Plans,
   PlansBanner,
   Product,
@@ -22,6 +23,7 @@ export default function Home() {
       <Plans />
       <PlansBanner />
       <Contact />
+      <Newsletter />
     </main>
   );
 }

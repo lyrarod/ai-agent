@@ -45,7 +45,7 @@ export const Contact = () => {
 
             <strong className="text-primary lg:text-lg">Connect With Us</strong>
 
-            <div className="grid grid-cols-2 gap-6">
+            <div className="grid grid-cols-2 gap-8">
               {[
                 { icon: "fa-brands fa-facebook-f fa-xl", profile: "@facebook" },
                 { icon: "fa-brands fa-x-twitter fa-xl", profile: "@twitter" },
@@ -55,7 +55,7 @@ export const Contact = () => {
                 return (
                   <div
                     key={i}
-                    className="flex flex-col items-center justify-center p-6 space-y-2 border rounded-md shadow hover:shadow-md border-primary bg-card"
+                    className="flex flex-col items-center justify-center p-6 space-y-2 transition border rounded-md shadow-md hover:shadow-lg border-primary bg-card"
                   >
                     <span className="text-primary">
                       <i className={icon}></i>
@@ -73,7 +73,7 @@ export const Contact = () => {
                 alt="Beautiful image"
                 width={1000}
                 height={1000}
-                className="shadow-2xl"
+                className="transition shadow-lg shadow-gray-400 dark:shadow-none"
               />
               <div className="absolute w-full h-full -right-4 -top-4 -z-10 bg-gradient-to-b from-primary to-emerald-500 lg:-right-6 lg:-top-6"></div>
             </div>

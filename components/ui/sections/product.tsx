@@ -20,7 +20,7 @@ export const Product = () => {
                 alt="product image"
                 width={1000}
                 height={1000}
-                className="rounded-tl-[1vw] shadow-lg shadow-gray-500 dark:shadow-background"
+                className="rounded-tl-[1vw] shadow-md shadow-gray-500 dark:shadow-background"
               />
               <div className="absolute w-full h-full -top-3 lg:-top-4 lg:-left-4 -left-3 bg-gradient-to-b from-primary to-emerald-600 -z-10 rounded-tl-[1vw]"></div>
             </div>

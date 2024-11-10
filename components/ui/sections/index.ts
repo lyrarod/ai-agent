@@ -7,6 +7,7 @@ import { Product } from "./product";
 import { ProductBanner } from "./product-banner";
 import { Plans } from "./plans";
 import { PlansBanner } from "./plans-banner";
+import { Newsletter } from "./newsletter";
 
 export {
   Hero,
@@ -18,4 +19,5 @@ export {
   ProductBanner,
   Plans,
   PlansBanner,
+  Newsletter,
 };
