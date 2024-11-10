@@ -1,3 +1,4 @@
+import { cn } from "@/lib/utils";
 import { Activity } from "lucide-react";
 import Image from "next/image";
 
@@ -36,21 +37,16 @@ export const Contact = () => {
               <span className="text-sm lg:text-base">+55 21 33333-3333</span>
             </div>
 
-            <div className="flex items-center gap-x-3">
-              <i className="fa-brands fa-whatsapp fa-lg text-primary"></i>
-              <span className="text-sm lg:text-base">+55 21 99999-9999</span>
-            </div>
-
             <div className="h-[1px] w-full bg-border"></div>
 
             <strong className="text-primary lg:text-lg">Connect With Us</strong>
 
             <div className="grid grid-cols-2 gap-8">
               {[
-                { icon: "fa-brands fa-facebook-f fa-xl", profile: "@facebook" },
-                { icon: "fa-brands fa-x-twitter fa-xl", profile: "@twitter" },
-                { icon: "fa-brands fa-instagram fa-xl", profile: "@instagram" },
-                { icon: "fa-brands fa-github-alt fa-xl", profile: "@github" },
+                { icon: "fa-brands fa-whatsapp", profile: "whatsapp" },
+                { icon: "fa-brands fa-facebook-f", profile: "facebook" },
+                { icon: "fa-brands fa-x-twitter", profile: "twitter" },
+                { icon: "fa-brands fa-instagram", profile: "instagram" },
               ].map(({ icon, profile }, i) => {
                 return (
                   <div
@@ -58,9 +54,9 @@ export const Contact = () => {
                     className="flex flex-col items-center justify-center p-6 space-y-2 transition border rounded-md shadow-md hover:shadow-lg border-primary bg-card"
                   >
                     <span className="text-primary">
-                      <i className={icon}></i>
+                      <i className={cn(icon, `lg:text-3xl text-2xl`)}></i>
                     </span>
-                    <p className="text-sm font-medium lowercase">{profile}</p>
+                    <p className="text-sm capitalize lg:text-base">{profile}</p>
                   </div>
                 );
               })}

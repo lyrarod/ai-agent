@@ -17,7 +17,7 @@ export const Plans = () => {
             return (
               <div
                 key={i}
-                className="flex flex-col px-8 py-12 space-y-4 transition border rounded-md shadow-md lg:space-y-8 hover:border-primary hover:scale-105"
+                className="flex flex-col px-8 py-12 space-y-4 transition border rounded-md shadow-md lg:space-y-8 hover:border-primary lg:hover:scale-105"
               >
                 <p className="px-4 py-1 font-medium rounded-md shadow xl:text-xl bg-muted w-max">
                   {plan.title}

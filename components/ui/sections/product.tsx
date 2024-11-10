@@ -13,14 +13,14 @@ export const Product = () => {
         </div>
 
         <div className="grid gap-12 mt-16 sm:grid-cols-2 xl:grid-cols-3 lg:gap-16">
-          {Array.from({ length: 6 }).map((_, i) => (
+          {products.map((product, i) => (
             <div key={i} className="relative z-0 w-full lg:max-w-md">
               <Image
-                src={"/ai.jpg"}
+                src={product.image}
                 alt="product image"
                 width={1000}
                 height={1000}
-                className="rounded-tl-[1vw] shadow-md shadow-gray-500 dark:shadow-background"
+                className="rounded-tl-[1vw] shadow-md shadow-gray-500 dark:shadow-background h-full max-h-80 object-cover"
               />
               <div className="absolute w-full h-full -top-3 lg:-top-4 lg:-left-4 -left-3 bg-gradient-to-b from-primary to-emerald-600 -z-10 rounded-tl-[1vw]"></div>
             </div>
@@ -30,3 +30,24 @@ export const Product = () => {
     </section>
   );
 };
+
+const products = [
+  {
+    image: "/ai.jpg",
+  },
+  {
+    image: "/ai5.png",
+  },
+  {
+    image: "/ai1.avif",
+  },
+  {
+    image: "/ai2.avif",
+  },
+  {
+    image: "/ai4.avif",
+  },
+  {
+    image: "/ai3.avif",
+  },
+];
